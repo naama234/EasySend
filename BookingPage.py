@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from constants import DATA_ELEMENTS_CLASS_NAME, PRICE_CLASS_NAME, COLOR_CSS_SELECTOR, PASSENGERS_ELEMENTS_CLASS_NAME, \
-    MONTH_YEAR_CLASS_NAME, RIGHT_ARROW_ID, OK_SET_DATE_BUTTON_XPATH
+    MONTH_YEAR_CLASS_NAME, RIGHT_ARROW_ID, OK_SET_DATE_BUTTON_XPATH, SLIDER_CONTAINER_CLASS_NAME
 
 
 def get_returning_date(departure_date):
@@ -28,7 +28,7 @@ class BookingPage:
         self.children_number = passengers_elements[1]
 
     def set_price(self, desired_position):
-        slider_container = self.browser.find_element(By.CLASS_NAME, "theme__container___3AsSH")
+        slider_container = self.browser.find_element(By.CLASS_NAME, SLIDER_CONTAINER_CLASS_NAME)
         slider_width = slider_container.size['width']
         range_min = 100
         range_max = 1800

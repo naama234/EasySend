@@ -15,7 +15,8 @@ PHONE_CSS_SELECTOR = 'div.CustomerInfo__input___eFffe input[type="tel"]'
 FILE_CSS_SELECTOR = 'div.CustomerInfo__dropzone___3tqul input[type="file"]'
 CHECK_TERMS_AND_CONDITIONS_CLASS_NAME = "theme__check___2B20W"
 PAY_BUTTON_CLASS_NAME = "CTAButton__button___2nXRo"
-OK_SET_DATE_BUTTON_XPATH =  "//button[contains(text(), 'Ok')]"
+OK_SET_DATE_BUTTON_XPATH = "//button[contains(text(), 'Ok')]"
 GALLERY_ITEMS_CLASS_NAME = "theme__card___2nWQb"
 GALLERY_ITEM_TITLE_CLASS_NAME = "theme__title___35Wsy"
 BOOK_BUTTON_XPATH = './/button[contains(text(), "Book")]'
+SLIDER_CONTAINER_CLASS_NAME = "theme__container___3AsSH"
