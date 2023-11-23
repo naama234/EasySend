@@ -6,4 +6,4 @@ Make sure you have pytest and selenium installed in your project -
 
 How to run the test -
 
-`pytest .\test_booking`
+`pytest .\test_booking.py`

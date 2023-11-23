@@ -1,0 +1,18 @@
+NAME = "John Snow"
+EMAIL = "john.snow@targaryen.com"
+SSN = "111-22-3333"
+PHONE = "+1-202-555-0179"
+DATA_ELEMENTS_CLASS_NAME = "Box__box___2XzJ2.Hero__date-picker-box___RaqVV"
+PRICE_CLASS_NAME = "theme__knob____QAHG"
+COLOR_CSS_SELECTOR = ".Gallery__dropdown-size-1___3IWmB:nth-child(2)"
+PASSENGERS_ELEMENTS_CLASS_NAME = "WhiteDropDown__dropdown___2JJF3"
+MONTH_YEAR_CLASS_NAME = "theme__title___2Ue3-"
+RIGHT_ARROW_ID = "right"
+NAME_CSS_SELECTOR = ".CustomerInfo__input___eFffe input[type='text']"
+EMAIL_CSS_SELECTOR = "div[data-react-toolbox='input'] input[type='email']"
+SSN_XPATH = "//div[contains(@class, 'CustomerInfo__input___eFffe')]//input[@type='text' and @role='input' and following-sibling::span[contains(@class, 'theme__hint___2D9g-') and contains(., 'Social Security Number')]]"
+PHONE_CSS_SELECTOR = 'div.CustomerInfo__input___eFffe input[type="tel"]'
+FILE_CSS_SELECTOR = 'div.CustomerInfo__dropzone___3tqul input[type="file"]'
+CHECK_TERMS_AND_CONDITIONS_CLASS_NAME = "theme__check___2B20W"
+PAY_BUTTON_CLASS_NAME = "CTAButton__button___2nXRo"
+OK_SET_DATE_BUTTON_XPATH =  "//button[contains(text(), 'Ok')]"
