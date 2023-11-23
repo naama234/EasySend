@@ -1,11 +1,12 @@
 from selenium.webdriver.common.by import By
 from CheckoutPage import CheckoutPage
 import pytest
-from constants import NAME, EMAIL, SSN, PHONE
+from constants import NAME, EMAIL, SSN, PHONE, BOOK_BUTTON_XPATH
+
 
 @pytest.mark.usefixtures("login")
 def test_book_ticket(browser, booking_page, selected_planet, file_path):
-    book_button = selected_planet.find_element(By.XPATH, './/button[contains(text(), "Book")]')
+    book_button = selected_planet.find_element(By.XPATH, BOOK_BUTTON_XPATH)
     book_button.click()
 
     checkout_form = CheckoutPage(browser)

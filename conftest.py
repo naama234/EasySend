@@ -4,6 +4,7 @@ from datetime import datetime, timedelta
 from selenium.webdriver.common.by import By
 import os
 from BookingPage import BookingPage
+from constants import GALLERY_ITEMS_CLASS_NAME, GALLERY_ITEM_TITLE_CLASS_NAME
 
 
 @pytest.fixture
@@ -28,9 +29,9 @@ def departure_date():
 @pytest.fixture
 def selected_planet(browser):
     planet = 'Babahoyo'
-    gallery_items = browser.find_elements(By.CLASS_NAME, "theme__card___2nWQb")
+    gallery_items = browser.find_elements(By.CLASS_NAME, GALLERY_ITEMS_CLASS_NAME)
     for gallery_item in gallery_items:
-        title_element = gallery_item.find_element(By.CLASS_NAME, "theme__title___35Wsy")
+        title_element = gallery_item.find_element(By.CLASS_NAME, GALLERY_ITEM_TITLE_CLASS_NAME)
         title_text = title_element.text
         if title_text == planet:
             return gallery_item
