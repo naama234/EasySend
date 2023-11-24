@@ -54,8 +54,8 @@ class BookingPage:
     def set_children_number(self, number):
         self.children_number.click()
         option_selector = f'#app > div > section.Hero__hero___1FDXn > div:nth-child(3) > div > div:nth-child(4) > ul > li:nth-child({number+1})'
-        option_selector = self.browser.find_element(By.CSS_SELECTOR, option_selector)
-        option_selector.click()
+        option = self.browser.find_element(By.CSS_SELECTOR, option_selector)
+        option.click()
 
     def set_date(self, date):
         day, month, year = date.split(' ')
